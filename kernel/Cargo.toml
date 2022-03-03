@@ -1,0 +1,20 @@
+[package]
+name = "jsii-kernel"
+version = "0.1.0-dev.0"
+license = "Apache-2.0"
+authors = ["Amazon Web Services, Inc <aws-jsii@amazon.com>"]
+
+edition = "2021"
+resolver = "2"
+
+[dependencies]
+anyhow = "1.0.55"
+deno = { path = "../deno" }
+flate2 = { version = "1.0.22", features = ["zlib"] }
+hyper = { version = "0.14.17", features = ["client"] }
+hyper-tls = "0.5.0"
+serde = "1"
+serde_json = "1.0.79"
+tar = "0.4.38"
+tempdir = "0.3.7"
+tokio = { version = "1", features = ["macros", "rt"] }
